@@ -1,5 +1,18 @@
 @use '_variables.scss' as var;
 
+.form-sidebar {
+  background: url(../forest-bg.jpg);
+}
+
+.logo-bar {
+  background-color: #6d623f80;
+  h1 {
+    font: 5.5rem 'credit_valley';
+    font-weight: bold;
+    color: var.$color-text-header; 
+  }
+}
+
 .form-body {
   background-color: var.$color-body-bg;
 

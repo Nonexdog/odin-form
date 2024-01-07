@@ -6,9 +6,25 @@
   height: 100vh;
 }
 
-.logo-sidebar {
+.form-sidebar {
   flex: 1;
 }
+
+.logo-bar {
+  position: relative;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  img {
+    width: 20%;
+  }
+}
+
 .form-body {
   flex: 2;
   display: flex;
