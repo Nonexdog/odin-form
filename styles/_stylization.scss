@@ -1,0 +1,13 @@
+@use '_variables.scss' as var;
+
+.form-body {
+  background-color: var.$color-body-bg;
+
+  p {
+    color: var.$color-text-highlight;
+  }
+}
+
+form {
+  background-color: #fff;
+}

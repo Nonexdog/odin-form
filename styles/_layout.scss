@@ -1,0 +1,31 @@
+@use '_variables.scss' as var;
+
+.signup {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.logo-sidebar {
+  flex: 1;
+}
+.form-body {
+  flex: 2;
+  display: flex;
+  gap: var.$margin-form;
+  flex-direction: column;
+  justify-content: center;
+  > p,
+  > button {
+    margin: 0 var.$margin-form;
+  }
+}
+
+form {
+  height: 20%;
+}
+
+button {
+  padding: .5em 1.5em;
+  width: fit-content;
+}

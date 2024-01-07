@@ -1,1 +1,73 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1, h2, h3,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+form {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.signup {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.logo-sidebar {
+  flex: 1;
+}
+
+.form-body {
+  flex: 2;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-body > p,
+.form-body > button {
+  margin: 0 2rem;
+}
+
+form {
+  height: 20%;
+}
+
+button {
+  padding: 0.5em 1.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form-body {
+  background-color: #18081d;
+}
+.form-body p {
+  color: #ccd45b;
+}
+
+form {
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
