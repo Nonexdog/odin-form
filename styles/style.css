@@ -42,7 +42,10 @@ img {
   width: 100%;
 }
 
-form {
+form,
+input,
+label,
+button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -89,6 +92,16 @@ form {
   padding: 2rem;
 }
 
+form div {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+}
+
 button {
   padding: 0.5em 1.5em;
   width: -moz-fit-content;
@@ -117,5 +130,24 @@ button {
 }
 
 .form-section {
-  background-color: #fff;
+  background-color: #d4c85b;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
+
+button {
+  font: 1.5rem "credit_valley";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 0.2em;
+}
+
+label {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

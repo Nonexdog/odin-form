@@ -41,6 +41,16 @@
   padding: var.$margin-form;
 }
 
+form div {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+}
+
 button {
   padding: .5em 1.5em;
   width: fit-content;
