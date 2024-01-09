@@ -44,6 +44,8 @@ input {
   }
   &:focus:invalid {
     background-color: var.$color-input-invalid;
+    border-color: var.$color-input-invalid-strong;
+    outline: 2px solid black;
   }
 }
 
@@ -51,9 +53,25 @@ button {
   font: 1.5rem 'credit_valley';
   font-weight: bold;
   letter-spacing: .1rem;
-  border: none;
+  border: 2px solid var.$color-text-highlight;
   border-radius: .2em;
   background-color: var.$color-text-highlight;
+  transition: 
+    background-color .2s,
+    color .2s,
+    border-color .2s;
+  &:hover {
+    cursor: pointer;
+    background-color: var.$color-body-bg;
+    color: var.$color-text-highlight;
+  }
+  &:active {
+    transition: all 0s;
+    border-color: var.$color-input-invalid-strong;
+    color: var.$color-input-invalid-strong;
+    background-color: black;
+    outline: 4px solid black;
+  }
 }
 
 label {
