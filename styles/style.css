@@ -33,7 +33,9 @@
 body,
 h1, h2, h3,
 p,
-form {
+form,
+input,
+label {
   margin: 0;
   padding: 0;
 }
@@ -120,6 +122,14 @@ button {
   font-weight: bold;
   letter-spacing: 0.2rem;
   color: #cde640;
+}
+
+.important,
+.form-body p.important {
+  background-color: #d4c85b;
+  color: #18081d;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
 .form-body {
