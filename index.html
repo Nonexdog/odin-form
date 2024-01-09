@@ -16,16 +16,16 @@
     </div>
     <main class="form-body">
       <p class="important">This is a service that is reserved to a few select ones... Or those connected to the <abbr title="Intricate Numerological Column of Esoteric Networks Smoking Endlessly">INCENSE</abbr>. If you're seeing this by mistake, turn around and throw salt behind your shoulder, lest a <abbr title="Hex Electronically Xerographed">HEX</abbr> be applied onto your machine, orb, or similar viewing device (and by transference process, you). <br><br>If you're seeing this by mistake, contact your nearest diviner to mark the root of the issue.</p>
-      <p>You have seen what we have to offer... If you want to be able to make use of high-quality spells, surf a network with other potion-makers, and innovate within the sigil sphere, join our guild!! Remote access is what's new nowadays, and we have prepared a simple pact for you to follow...</p>
+      <p class="highlight">You have seen what we have to offer... If you want to be able to make use of high-quality spells, surf a network with other potion-makers, and innovate within the sigil sphere, join our guild!! Remote access is what's new nowadays, and we have prepared a simple pact for you to follow...</p>
       <section class="form-section">
         <h1>Let's get to it...</h1>
         <form action="" id="signup">
           <div>
-            <label for="user_name">NAME*
+            <label for="user_name">NAME(S)*
               <input type="text" name="user_name" id="user_name" required>
             </label>
             <label for="user_herb">
-              HERB SPECIALIZATION
+              HERB SPECIALIZATION(S)
               <input type="text" name="user_herb" id="user_herb" placeholder="Rhubarb">
             </label>
           </div>
@@ -36,23 +36,23 @@
             </label>
             <label for="user_tel">
               GEMATRIC TELEDECTOR
-              <input type="tel" name="user_tel" id="user_tel" placeholder="+0%00 <123> 456-7890">
+              <input type="tel" name="user_tel" id="user_tel" placeholder="+00 #123# 456-7890" pattern="\+\d{2} *#?\d{3}#? *\d{3} *[\-]? *\d{4}">
             </label>
           </div>
           <div>
             <label for="user_password">
               PROTECTIVE SEAL*
-              <input type="password" name="user_password" id="user_password" required>
+              <input type="password" name="user_password" id="user_password" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
             </label>
             <label for="user_password_confirm">
               CONFIRM SEAL*
-              <input type="password" name="user_password_confirm" id="user_password_confirm" required>
+              <input type="password" name="user_password_confirm" id="user_password_confirm" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
             </label>
           </div>
         </form>
       </section>
       <button form="signup"> Seal the pact </button>
-      <p>You've already connected your ICOR address to our service? <a href="">Log in...</a></p>
+      <p class="highlight">You've already connected your ICOR address to our service? <a href="">Log in...</a></p>
     </main>
   </div>
 </body>

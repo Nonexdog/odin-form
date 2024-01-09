@@ -124,19 +124,19 @@ button {
   color: #cde640;
 }
 
-.important,
-.form-body p.important {
+.important {
   background-color: #d4c85b;
   color: #18081d;
   padding: 1rem;
   font-size: 0.9rem;
 }
 
+.highlight {
+  color: #d4c85b;
+}
+
 .form-body {
   background-color: #18081d;
-}
-.form-body p {
-  color: #d4c85b;
 }
 
 .form-section {
@@ -148,6 +148,13 @@ input {
   padding: 0.25em 0.5em;
   border: 1px solid black;
   border-radius: 0.5em;
+  background-color: #e2f1d6;
+}
+input:required {
+  border-width: 2px;
+}
+input:focus:invalid {
+  background-color: #f0cbf5;
 }
 
 button {
@@ -156,6 +163,7 @@ button {
   letter-spacing: 0.1rem;
   border: none;
   border-radius: 0.2em;
+  background-color: #d4c85b;
 }
 
 label {
