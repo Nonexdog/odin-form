@@ -41,10 +41,19 @@
   padding: var.$margin-form;
 }
 
-form div {
-  display: flex;
-  gap: 4rem;
-  margin-top: 1rem;
+form {
+  div {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+  }
+  div:last-child {
+    font-size: .8rem;
+    opacity: .8;
+    position: relative;
+    top: .5rem;
+    width: 38%;
+  }
 }
 
 input {
