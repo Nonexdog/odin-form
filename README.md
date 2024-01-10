@@ -1,4 +1,4 @@
-# odin-form
+# (Odin) Signup form
 
 A mockup signup form of an imaginary website. This is a test of my skills regarding:
   - Usage of different tags like \<form>, \<label>, \<input>, etc.
@@ -6,3 +6,7 @@ A mockup signup form of an imaginary website. This is a test of my skills regard
   - Different types of inputs and how to handle them
   - Client-side validation
   - UI and UX form design
+
+Header font is [Credit Valley](https://www.fontsquirrel.com/fonts/credit-valley) by [Larabie Fonts](https://www.fontsquirrel.com/fonts/list/foundry/larabie-fonts)
+
+Background image by [TemperateSage](https://pixabay.com/users/temperatesage-13030917/) on [Pixabay](https://pixabay.com/photos/forest-wilderness-night-midnight-4395986/)
