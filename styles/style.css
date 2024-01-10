@@ -120,6 +120,7 @@ button {
 
 .form-sidebar {
   background: url(../forest-bg.jpg);
+  background-size: cover;
 }
 
 .logo-bar {

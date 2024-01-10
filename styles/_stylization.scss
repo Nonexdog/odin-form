@@ -2,6 +2,10 @@
 
 .form-sidebar {
   background: url(../forest-bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .logo-bar {
