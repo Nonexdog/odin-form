@@ -1,6 +1,6 @@
 const password = document.querySelector('#user_password');
 const passwordConfirm = document.querySelector('#user_password_confirm');
-const regexPwd = /(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}/g;
+const regexPwd = /(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}/;
 
 password.addEventListener('input', () => {
   if (password.value.length > 0) {
