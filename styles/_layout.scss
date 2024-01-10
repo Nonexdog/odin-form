@@ -66,6 +66,15 @@ form {
     gap: 4rem;
     margin-top: 1rem;
   }
+  div:last-child { 
+    margin-bottom: .3rem;
+    p {
+    color: var.$color-input-invalid-strong;
+    visibility: hidden;
+    position: absolute;
+    font-size: .8rem;
+    }
+  }
 }
 
 input {

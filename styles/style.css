@@ -119,6 +119,15 @@ form div {
   gap: 4rem;
   margin-top: 1rem;
 }
+form div:last-child {
+  margin-bottom: 0.3rem;
+}
+form div:last-child p {
+  color: #c41616;
+  visibility: hidden;
+  position: absolute;
+  font-size: 0.8rem;
+}
 
 input {
   display: block;
