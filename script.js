@@ -1,7 +1,10 @@
 const password = document.querySelector('#user_password');
 const passwordConfirm = document.querySelector('#user_password_confirm');
+const passwordNoMatch = document.querySelector('form div p');
+
 const passwordInfo = document.querySelector('.form-section > p');
 const spanInfo = Array.from(passwordInfo.querySelectorAll('span'));
+
 const regexPwd = /(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}/;
 
 password.addEventListener('input', () => {
@@ -20,8 +23,10 @@ password.addEventListener('input', () => {
 
 passwordConfirm.addEventListener('input', () => {
   if (password.value !== passwordConfirm.value) {
+    passwordNoMatch.style.visibility = 'visible';
     passwordConfirm.setCustomValidity("Seals must match!!");
   } else {
+    passwordNoMatch.style.visibility = 'hidden';
     passwordConfirm.setCustomValidity("");
   }
 });
