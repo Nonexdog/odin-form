@@ -64,6 +64,13 @@ button {
 .form-sidebar {
   flex: 1;
 }
+.form-sidebar footer {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .logo-bar {
   position: relative;

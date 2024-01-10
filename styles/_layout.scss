@@ -8,6 +8,13 @@
 
 .form-sidebar {
   flex: 1;
+  footer {
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+  }
 }
 
 .logo-bar {
@@ -27,6 +34,7 @@
   h1 {
     font-size: clamp(2rem, 5vw,5.5rem);
   }
+  
 }
 
 .form-body {
