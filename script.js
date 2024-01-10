@@ -1,5 +1,7 @@
 const password = document.querySelector('#user_password');
 const passwordConfirm = document.querySelector('#user_password_confirm');
+const passwordInfo = document.querySelector('.form-section > p');
+const spanInfo = Array.from(passwordInfo.querySelectorAll('span'));
 const regexPwd = /(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}/;
 
 password.addEventListener('input', () => {
@@ -13,6 +15,7 @@ password.addEventListener('input', () => {
   } else {
     password.setCustomValidity('');
   }
+  testPasswordRegex();
 });
 
 passwordConfirm.addEventListener('input', () => {
@@ -22,3 +25,23 @@ passwordConfirm.addEventListener('input', () => {
     passwordConfirm.setCustomValidity("");
   }
 });
+
+function testPasswordRegex() {
+  if (/[a-z]/g.test(password.value) && /[A-Z]/g.test(password.value)) {
+    spanInfo[0].classList.add('pwd-correct');
+  } else {
+    spanInfo[0].classList.remove('pwd-correct');
+  }
+
+  if (/\d/g.test(password.value)) {
+    spanInfo[1].classList.add('pwd-correct');
+  } else {
+    spanInfo[1].classList.remove('pwd-correct');
+  }
+
+  if (/(=>|<=)/g.test(password.value)) {
+    spanInfo[2].classList.add('pwd-correct');
+  } else {
+    spanInfo[2].classList.remove('pwd-correct');
+  }
+}
