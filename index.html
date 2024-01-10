@@ -43,16 +43,16 @@
           <div>
             <label for="user_password">
               PROTECTIVE SEAL*
-              <input type="password" name="user_password" id="user_password" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+              <input type="password" name="user_password" id="user_password" minlength="7" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
             </label>
             <label for="user_password_confirm">
               CONFIRM SEAL*
-              <input type="password" name="user_password_confirm" id="user_password_confirm" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+              <input type="password" name="user_password_confirm" minlength="7" id="user_password_confirm" pattern="(?=.*(?:=>|<=))(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required disabled>
             </label>
           </div>
         </form>
       </section>
-      <button form="signup"> Seal the pact </button>
+      <button form="signup" id="submit"> Seal the pact </button>
       <p class="highlight">You've already connected your ICOR address to our service? <a href="">Log in...</a></p>
     </main>
   </div>
