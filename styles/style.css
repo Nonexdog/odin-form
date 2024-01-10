@@ -158,6 +158,10 @@ input:focus:invalid {
   border-color: #c41616;
   outline: 2px solid black;
 }
+input:disabled {
+  border-color: #252724;
+  background-color: #b8beb6;
+}
 
 button {
   font: 1.5rem "credit_valley";

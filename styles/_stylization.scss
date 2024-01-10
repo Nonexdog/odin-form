@@ -47,6 +47,10 @@ input {
     border-color: var.$color-input-invalid-strong;
     outline: 2px solid black;
   }
+  &:disabled {
+    border-color: var.$color-disabled-border;
+    background-color: var.$color-disabled;
+  }
 }
 
 button {
