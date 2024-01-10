@@ -39,6 +39,13 @@
 
 .form-section {
   padding: var.$margin-form;
+  > p {
+    font-size: .8rem;
+    opacity: .8;
+    position: relative;
+    top: 1rem;
+    width: 38%;
+  }
 }
 
 form {
@@ -46,13 +53,6 @@ form {
     display: flex;
     gap: 4rem;
     margin-top: 1rem;
-  }
-  div:last-child {
-    font-size: .8rem;
-    opacity: .8;
-    position: relative;
-    top: .5rem;
-    width: 38%;
   }
 }
 
