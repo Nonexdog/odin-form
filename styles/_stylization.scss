@@ -1,5 +1,11 @@
 @use '_variables.scss' as var;
 
+body {
+  font-family: 'Alegreya', serif;
+  letter-spacing: .1rem;
+  font-size: 1.1rem;
+}
+
 .form-sidebar {
   background: url(../forest-bg.jpg);
   -webkit-background-size: cover;
